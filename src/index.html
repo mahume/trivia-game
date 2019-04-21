@@ -1,47 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Trivia Game</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <!-- Banner -->
-    <div class="jumbotron jumbotron-fluid bg-transparent">
-        <div class="container">              
-                <img src="assets/images/logo.png" alt="Logo">
+    <div class="jumbotron-fluid bg-transparent my-3">
+        <div class="container">
+            <img class="d-block m-auto" src="assets/images/logo.png" alt="Logo">
         </div>
     </div>
-    <!-- Begin Quest -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg">
-                <button id="beginQuestButton" class="btn btn-warning btn-lg">Begin Quest</button>
+    <!-- Map -->
+    <div class="container p-0 shadow-lg">
+        <!-- Begin Quest -->
+        <div id="game-container" class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <button id="beginQuestButton" class="btn btn-warning btn-lg btn-block">Begin Quest</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Question -->
+            <div id="questionJumbo" class="container d-none">
+                <div class="row">
+                    <div class="col-lg">
+                        <div id="questionArea" class="jumbotron p-3"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Answers -->
+            <div id="answersJumbo" class="container d-none">
+                <div class="row">
+                    <div class="col-lg">
+                        <div id="answersArea" class="jumbotron p-3"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- Question -->
-    <div id="questionJumbo" class="container d-none">
-        <div class="row">
-            <div class="col-lg">
-                <div id="questionArea" class="jumbotron"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Answers -->
-    <div id="answersJumbo" class="container d-none">
-        <div class="row">
-            <div class="col-lg">
-                <div id="answersArea" class="jumbotron"></div>
-            </div>
-        </div>
-    </div>
-    <!-- Final Screen -->
-    
 
-<script src="assets/js/app.js"></script>    
+
+    <script src="assets/js/app.js"></script>
 </body>
+
 </html>

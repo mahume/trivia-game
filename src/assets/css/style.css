@@ -1,6 +1,8 @@
 html {
     height: 100%;
 }
-body {
-    background-image: url(../images/bag-end.jpg);
+#game-container {
+    height: 70vh;
+    background: url(../images/map.jpg);
+    background-size: 100% 100%;
 }
