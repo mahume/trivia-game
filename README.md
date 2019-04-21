@@ -11,11 +11,9 @@ Instructions:
 
 ## Built With
 * HTML5
-* CSS3
+* CSS
     - Bootstrap 4
 * JavaScript
-    - Vanilla JS
-    - setTimeout() functions
 
 ## Authors
 Mike Hume
